@@ -1,0 +1,40 @@
+header{
+  background-color: #3f3f3f;
+  color: #ffffff;
+  text-align: center;
+}
+nav {
+  background-color: #dd7;
+  color: #a1b;
+  text-align: center;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  border: solid #399 2px;
+}
+.main div {
+  width:40%;
+  border: solid green 2px;
+  padding: 20px;
+  background-color: #dd7;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(168, 1, 246, 0.5);
+}
+h1, h2 {
+  color: #a1b;
+  border: solid #78a 3px;
+  margin: 2px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
