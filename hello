@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Interaction Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="/submit-form" method="POST">
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Dropdown -->
+        <label for="topic">Topic:</label>
+        <select id="topic" name="topic">
+            <option value="support">Support</option>
+            <option value="sales">Sales</option>
+            <option value="feedback">Feedback</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Would you recommend us?</label><br>
+        <input type="radio" id="yes" name="recommend" value="yes" checked>
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="recommend" value="no">
+        <label for="no">No</label><br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to our newsletter</label><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
