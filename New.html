@@ -5,6 +5,7 @@
     <title>Try Your Best</title>
     <link rel="icon" href="aman.jpg" type="image/png">
     <style>
+        
         body{
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -14,10 +15,14 @@
         header{
             background-color: #3f3f3f;
             color: #ffffff;
+            width:100%;
+            margin: 0;
+            position: fixed;
             text-align: center;
+            
         }
         section div{
-            width:minmax(250px,84%);
+            width:84%;
             margin:0.5%;
             display:flex;
             flex-wrap: wrap;
@@ -45,6 +50,7 @@
             box-shadow: 0 0 10px rgba(174, 0, 255, 0.5);
         }
         #description {
+            padding-top:170px;
             background-color: #dd7;
             color: #a1b;
             text-align: center;
@@ -55,14 +61,8 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
             width: 100%;
             bottom: 0;
-        }
-        @media(min-height: 600px) {
-            footer {
-                position: fixed;
-            }
         }
         div ul ul{
             display:none;
