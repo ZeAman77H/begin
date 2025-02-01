@@ -1,0 +1,122 @@
+/* Reset some default styles for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+/* General styling for header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #444;
+    padding: 10px 20px;
+    border: 2px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Back button styling */
+#backbutton {
+    margin: 5px;
+    width: 5%;
+    min-width: 50px;
+    height: 50px;
+    background-color: #a1b;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#backbutton:hover {
+    background-color: #dd7;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* Search bar styling */
+#search-bar {
+    width: 30%;
+    min-width: 50px;
+    height: 30px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+
+}
+
+.sections-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+    grid-auto-rows: 1fr;
+}
+section {
+    padding: 1rem;
+    background-color: #ffffff;
+    border: px solid #cacaca;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 250px;
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+  /* Flexbox for audio items inside each section */
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #444;
+}
+  
+section li {
+    border: 1px solid #bf90aa;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .sections-container {
+        grid-template-columns: 1fr; /* Stacks sections vertically */
+    }
+
+    #search-bar {
+        width: 100%; /* Makes search bar take full width on smaller screens */
+    }
+}

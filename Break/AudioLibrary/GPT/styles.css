@@ -1,0 +1,83 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #search-bar {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Sections container grid */
+  .sections-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+    gap: 2rem;
+    padding: 1rem;
+    grid-auto-rows: 1fr; /* Ensures rows have equal height */
+  }
+  
+  section {
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 250px; /* Ensures sections are large enough */
+    max-height: 500px; /* Prevents too large sections */
+    overflow-y: auto; /* Adds scroll bar if content overflows */
+  }
+  
+  /* Flexbox for audio items inside each section */
+  section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  section li {
+    width: 100%; /* Makes each audio item take full width by default */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  audio {
+    margin-left: 1rem;
+    width: 80px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .sections-container {
+      grid-template-columns: 1fr; /* Stacks sections vertically */
+    }
+  
+    #search-bar {
+      width: 100%; /* Makes search bar take full width on smaller screens */
+    }
+  }
+  

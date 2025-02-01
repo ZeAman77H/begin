@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  header {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  #backbutton {
+    text-align: right;
+  }
+/* Section Styles */
+section {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* List Item Styles */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  ul li p {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  audio {
+    margin-left: 1rem;
+    width: 80px;
+    border-radius: 5px;
+    outline: none;
+  }
+  /* Search Bar Styles */
+#search-bar {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    max-width: 600px; /* Adjust the width to fit your design */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* Sections container grid */
+.sections-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+  gap: 2rem;
+  padding: 1rem;
+  grid-auto-rows: 1fr; /* Ensures rows have equal height */
+}
+  
+  /* Section styles */
+  section {
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 250px; /* Ensures sections are large enough */
+    max-height: 500px; /* Prevents too large sections */
+    overflow-y: auto; /* Adds scroll bar if content overflows */
+  }
+    
+  /* Flexbox for audio items inside each section */
+  section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+  
+section li {
+  width: 100%; /* Makes each audio item take full width by default */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+
+  /* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .sections-container {
+    grid-template-columns: 1fr; /* Stacks sections vertically */
+  }
+
+  #search-bar {
+    width: 100%; /* Makes search bar take full width on smaller screens */
+  }
+}
+
+  /* Back button styling */
+#backbutton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#backbutton:hover {
+  background-color: #0056b3;
+}
+
+/* Search bar styling */
+#search-bar {
+  width: 50%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
